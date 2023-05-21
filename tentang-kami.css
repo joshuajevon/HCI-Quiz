@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    background-color: #FAF8F6;
+    font-family: 'Sora';
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* navbar */
+nav{
+    width: 100%; 
+    top: 0%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    height: 5vw; 
+    background-color: #01395E;
+    justify-content:space-around;
+    z-index: 1;
+}
+
+nav a{
+    color: #FAF8F6;
+    text-decoration: none;
+    background-color: #01395E;
+}
+
+nav .logo img{
+    width: 4vw;
+    background-color: #01395E;
+}
+
+nav .logo a{
+    font-size: 2vw;
+    font-weight: 500; 
+} 
+
+nav .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    background-color: #01395E;
+}
+
+nav .nav-content{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 6vw;
+    background-color: #01395E;
+}
+
+nav .nav-content a{
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+nav a:hover{
+    color: rgb(138, 138, 138);
+} 
+
+.nav-content .tentangkami{
+    font-weight: 600;
+}
+
+/* landing page */
+#text{
+    /* background-image: url(Asset/bgtentangkami.png); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#text img{
+    width: 100%;
+}
+
+#text h1{
+    color: #FAF8F6;
+    font-size: 2.5vw;
+    margin-right: 50vw;
+    margin-left: 5vw;
+    position: absolute;
+    background-color: #01395e00;
+    text-shadow: black 4px 4px 0px;
+}
+
+
+/* visi n misi */
+#tentang-kami .transition img{
+    width: 100%;
+}
+
+#tentang-kami .transition2 img{
+    width: 100%;
+}
+
+.tentang-kami-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tentang-kami-content .tulisan-tentang-kami{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    margin-left: 5vw;
+}
+
+.tulisan-tentang-kami h1{
+    font-size: 5vw;
+}
+
+.tulisan-tentang-kami h2{
+    font-size: 3vw;
+}
+
+.tulisan-tentang-kami p{
+    font-size: 1.7vw;
+}
+
+#tentang-kami img{
+    width: 30vw;
+    /* margin-right: 5vw; */
+}
+
+/* tujuan */
+#tujuan .tujuan-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+.tujuan-content h1{
+    font-size: 5vw;
+}
+
+.tujuan-content h2{
+    font-size: 3vw;
+}
+
+.tujuan-content p{
+    font-size: 1.7vw;
+}
+
+.tujuan-content img{
+    width: 70vw;
+}
+
+.tujuan-content button{
+    margin-top: 2vh;
+    border-radius: 50px;
+    padding: 1vw 1vw;
+    font-size: 1vw;
+    border: solid 2px black;
+    transition: 0.2s linear all;
+}
+
+.btninstagram:hover{
+    background-color: #01395E;
+    border: 2px solid #01395E;
+    color: white;
+}
+
+#tujuan .transition3 img{
+    width: 100%;
+}
+
+/* footer */
+
+footer .container{
+    /* height: 30vh; */
+    padding: 3vw 0vw;
+    background-color: #01395E;
+    color: #FAF8F6;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .container .top-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #01395E;
+}
+
+.top-footer .left-footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #01395E;
+}
+
+.left-footer h1{
+    font-weight: 500;
+    background-color: #01395E;
+}
+
+.left-footer a{
+    background-color: #01395E;
+}
+
+.left-footer img{
+    width: 10vw;
+    background-color: #01395E;
+}
+
+.top-footer .right-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    gap: 1vh;
+    background-color: #01395E;
+}
+
+.top-footer .right-footer .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: right;
+    gap: 1vw;
+    background-color: #01395E;
+}
+
+.right-footer .socialmedia a{
+    margin-left: 0.5vw;
+    background-color: #01395E;
+}
+
+.bottom-footer{
+    background-color: #01395E;
+}
+
+.bottom-footer p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    margin-top: 3vh;
+    background-color: #01395E;
+}
+
+.bottom-footer hr{
+    margin-top: 3vh;
+}
+
+footer h1{
+    font-size: 2vw;
+    background-color: #01395E;
+}
+
+footer p{
+    font-size: 1.2vw;
+    background-color: #01395E;
+}
+
+footer .logo img{
+    width: 3vw;
+    background-color: #01395E;
+}
+
+footer .socialmedia img{
+    width: 2.5vw;
+    background-color: #01395E;
+}
+
+footer .socialmedia{
+    background-color: #01395E;
+}
+
+footer .left-footer img{
+    width: 10vw;
+    background-color: #01395E;
+}

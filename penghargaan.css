@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Sora';
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: #FAF8F6;
+}
+
+/* navbar */
+nav{
+    width: 100%; 
+    top: 0%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    height: 5vw; 
+    background-color: #01395E;
+    justify-content:space-around;
+    z-index: 1;
+}
+
+nav a{
+    color: #FAF8F6;
+    text-decoration: none;
+    background-color: #01395E;
+}
+
+nav .logo img{
+    width: 4vw;
+    background-color: #01395E;
+}
+
+nav .logo a{
+    font-size: 2vw;
+    font-weight: 500; 
+} 
+
+nav .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    background-color: #01395E;
+}
+
+nav .nav-content{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 6vw;
+    background-color: #01395E;
+}
+
+nav .nav-content a{
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+nav a:hover{
+    color: rgb(138, 138, 138);
+} 
+
+.nav-content .penghargaan{
+    font-weight: 600;
+}
+
+/* gambar */
+#gambar{
+    background-color: #FAF8F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 13vh;
+    justify-content: center;
+}
+
+#gambar .firstrow, #gambar .secondrow{
+    display: flex;
+    flex-direction: row;
+}
+
+#gambar .panjang img{
+    width: 29.9vw;
+}
+
+#gambar .pendek img{
+    width: 14.4vw;
+}
+
+@media screen and (max-width : 1500px){
+    #gambar{
+        margin-top: 5vh;
+    }
+    #penghargaan1 .container .title{
+        margin-top: 0.1vh ;
+    }
+}
+
+@media screen and (max-width : 800px){
+    #gambar{
+        margin-top: 5vh;
+    }
+    #penghargaan1 .container .title{
+        margin-top: 0.1vh ;
+    }
+}
+
+@media screen and (max-width : 400px){
+    #gambar{
+        margin-top: 2vh;
+    }
+    #penghargaan1 .container .title{
+        margin-top: 0.01vh ;
+    }
+}
+
+
+/* penghargaan */
+#penghargaan1 .container{
+    background-color: #FAF8F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#penghargaan1 .container .title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 3vw;
+    padding: 3vw 5vw;
+    background-color: #e0c38981;
+    box-shadow: #e0c389 5px 13px 5px;
+    border-radius: 321.5px;
+    margin-top: 5vh;
+    margin-bottom: 1.5vh;
+}
+
+.title h1{
+    background-color: #e0c38900;
+}
+
+.title img{
+    width: 5vw;
+    background-color: #e0c38900;
+}   
+
+#penghargaan2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#penghargaan2 img{
+    width: 100%;
+    background-color:  #82a9d000;
+}
+
+#penghargaan2 .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background-color:  #82a9d000;
+}
+
+#penghargaan2 .container .row{
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    background-color:  #82a9d000;
+}
+
+#penghargaan2 .container .content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color:  #82a9d000;
+}
+
+.content #gambar img{
+    width:20vw;
+}
+
+.content #gambar:hover{
+    transition: all .3s linear;
+    transform: scale(110%);
+}
+
+.content #gambar{
+    background-color: #82a9d000;
+}
+
+.content #keterangan{
+    background-color:  #82a9d000;
+}
+
+.content #keterangan img{
+    width: 5vw;
+    padding: 1vw 1vw;
+    margin-bottom: 1vh;
+    background-color:  #82a9d091;
+    border-radius: 90px;
+    box-shadow: #82A9D0 0.5vw 0.5vw 0.5vw;
+}
+
+.content #keterangan h1{
+    padding: 1vw 0.5vw;
+    background-color: #82a9d091;
+    box-shadow: #82A9D0 0.5vw 0.5vw 0.5vw;
+    border-radius: 172px;
+    font-size: 1vw;
+    color: #FAF8F6;
+}
+
+.content #keterangan p{
+    margin-top: 2vh;
+    padding: 0.5vw;
+    background-color: #82a9d091;
+    box-shadow: #82A9D0  0.5vw 0.5vw 0.5vw;
+    border-radius: 172px;
+    font-size: 1vw;
+    color: #FAF8F6;
+}
+
+#penghargaan2 .container button{
+    padding: 1vw 1vw;
+    border-radius: 83px;
+    font-size: 1vw;
+    background-color: #82a9d08a;
+    border: none;
+    box-shadow:#82a9d0  0.5vw 0.5vw 0.5vw;
+    font-weight: 500;
+    color: #FAF8F6;
+    transition: all .3s linear;
+}
+
+
+/* footer */
+
+footer .container{
+    /* height: 30vh; */
+    padding: 3vw 0vw;
+    background-color: #01395E;
+    color: #FAF8F6;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .container .top-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #01395E;
+}
+
+.top-footer .left-footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #01395E;
+}
+
+.left-footer h1{
+    font-weight: 500;
+    background-color: #01395E;
+}
+
+.left-footer a{
+    background-color: #01395E;
+}
+
+.left-footer img{
+    width: 10vw;
+    background-color: #01395E;
+}
+
+.top-footer .right-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    gap: 1vh;
+    background-color: #01395E;
+}
+
+.top-footer .right-footer .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: right;
+    gap: 1vw;
+    background-color: #01395E;
+}
+
+.right-footer .socialmedia a{
+    margin-left: 0.5vw;
+    background-color: #01395E;
+}
+
+.bottom-footer{
+    background-color: #01395E;
+}
+
+.bottom-footer p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    margin-top: 3vh;
+    background-color: #01395E;
+}
+
+.bottom-footer hr{
+    margin-top: 3vh;
+}
+
+footer h1{
+    font-size: 2vw;
+    background-color: #01395E;
+}
+
+footer p{
+    font-size: 1.2vw;
+    background-color: #01395E;
+}
+
+footer .logo img{
+    width: 3vw;
+    background-color: #01395E;
+}
+
+footer .socialmedia img{
+    width: 2.5vw;
+    background-color: #01395E;
+}
+
+footer .socialmedia{
+    background-color: #01395E;
+}
+
+footer .left-footer img{
+    width: 10vw;
+    background-color: #01395E;
+}
